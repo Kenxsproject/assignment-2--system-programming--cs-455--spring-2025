@@ -80,7 +80,7 @@ The behavior of your program and its output should [look like this](https://roy.
 
 ## ❖・Due・❖
 
-Thursday, 3 April 2025, at 10:00 PM. **`NO` late assignments will be accepted, unless you can provide documentation of an emergency.**
+Tuesday, 8 April 2025, at 10:00 PM. **`NO` late assignments will be accepted, unless you can provide documentation of an emergency.**
 
 ---
 
