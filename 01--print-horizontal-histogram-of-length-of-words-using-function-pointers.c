@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define SIZE 10
 void bubblesort(int array[],size_t size, int(*compare)(int a, int b));
 int ascending(int a, int b);
 int descending(int a, int b);
@@ -22,5 +23,30 @@ int main(){
  {
     
  }
- 
+ else if (order == 2)
+ {
+    /* code */
+ } else{
+
+ }
+ printf("\nData items in sorted order\n");
+    for (size_t i = 0; i < SIZE; ++i) {
+        printf("%4d", a[i]);
+    }
+    
+    printf("\n");
+    return 0;
+}
+
+void bubbleSort(int array[], size_t size, int (*compare)(int a, int b)) {
+    // loop to control passes
+    for (size_t pass = 1; pass < size; ++pass) {
+        // loop to control comparisons during each pass
+        for (size_t i = 0; i < size - 1; ++i) {
+            // if adjacent elements are out of order, swap them
+            if ((*compare)(array[i], array[i + 1])) {
+                swap(&array[i], &array[i + 1]);
+            }
+        }
+    }
 }
