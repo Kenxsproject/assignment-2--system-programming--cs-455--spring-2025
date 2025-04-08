@@ -38,3 +38,19 @@ int main(){
     printf("Program ended.\n");
     return 0;
 }
+
+void printArray(int grades[][EXAMS], size_t students, size_t exams){
+
+}
+
+void minimum(int grades[][EXAMS], size_t students, size_t exams){
+
+}
+
+void maximum(int grades[][EXAMS], size_t students, size_t exams){
+
+}
+
+void average(int grades[][EXAMS], size_t students, size_t exams){
+
+}
