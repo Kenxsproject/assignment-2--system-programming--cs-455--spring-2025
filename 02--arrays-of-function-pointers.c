@@ -40,17 +40,51 @@ int main(){
 }
 
 void printArray(int grades[][EXAMS], size_t students, size_t exams){
-
+    printf("\nThe array is:\n");
+    printf("            [0]  [1]  [2]  [3]");
+    
+    for (size_t i = 0; i < students; i++) {
+        printf("\nstudentGrades[%zu]", i);
+        for (size_t j = 0; j < exams; j++) {
+            printf("%5d", grades[i][j]);
+        }
+    }
+    printf("\n");
 }
 
 void minimum(int grades[][EXAMS], size_t students, size_t exams){
+    int lowGrade = 100; 
 
+    for (size_t i = 0; i < students; i++) {
+        for (size_t j = 0; j < exams; j++) {
+            if (grades[i][j] < lowGrade) {
+                lowGrade = grades[i][j];
+            }
+        }
+    }
+    printf("\nThe lowest grade is %d\n", lowGrade);
 }
 
 void maximum(int grades[][EXAMS], size_t students, size_t exams){
-
+    int highGrade = 0; 
+    for (size_t i = 0; i < students; i++) {
+        for (size_t j = 0; j < exams; j++) {
+            if (grades[i][j] > highGrade) {
+                highGrade = grades[i][j];
+            }
+        }
+    }
+    printf("\nThe highest grade is %d\n", highGrade);
 }
 
 void average(int grades[][EXAMS], size_t students, size_t exams){
-
+    printf("\n");
+    for (size_t i = 0; i < students; i++) {
+        int total = 0;
+        for (size_t j = 0; j < exams; j++) {
+            total += grades[i][j];
+        }
+        printf("The average for student %zu is %.2f\n", 
+               i, (double) total / exams);
+    }
 }
